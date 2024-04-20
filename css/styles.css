@@ -80,13 +80,12 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 72px;  
+    margin-right: 76px;  
 }
 
  .menu {
     display: flex;
     gap: 40px;
-    margin-right: 72px;
  }
 
 .menu-link {
@@ -140,10 +139,10 @@ gap: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-container {
-    padding: 188px 0;
     color: #ffffff;
 }
 
@@ -316,13 +315,11 @@ height: auto;
 /* ========= FOOTER STYLES ========= */
 
 .footer {
+    margin: 100px 0;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2e2f42;
-}
-.footer-container {
-    margin: 100px 0;
 }
 
 .link-footer {
