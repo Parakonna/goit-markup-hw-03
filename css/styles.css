@@ -1,8 +1,15 @@
 /* ========= COMMON STYLES ========= */
 ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
 }
- 
+  
+img {
+    display: blok;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -15,14 +22,56 @@ button {
  body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    margin: 0;
  }
 
  .accent-color {
      color: #4D5AE5;
  }
 
+ h1, h2, h3, h4, h5, h6. p {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ .section-paddings {
+    padding-top: 120px;
+    padding-bottom: 120px;
+ }
+
+ .section-title {
+padding-bottom: 72px;
+text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+ }
+
  /* ========= HEARD STYLES ========= */
+ .container {
+     max-width: 1158px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .header-container {
+     display: flex;
+    align-items: center;
+ }
+.page-headr{
+   border-bottom: 1px solid #e7e9fc;
+}
+
+ .page-nav {
+    display: flex;
+    align-items: center;
+ }
+
 .page-logo {
 font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -30,15 +79,23 @@ font-family: "Raleway", sans-serif;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5  
+    color: #4d5ae5;
+    margin-right: 72px;  
 }
- 
+
+ .menu {
+    display: flex;
+    gap: 40px;
+ }
+
 .menu-link {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        padding: 24px 0;
+        display: block;
 }
 
 .text-studio {
@@ -50,9 +107,15 @@ font-family: "Raleway", sans-serif;
     color: #404bbf;
 }
 
+.menu-adress {
+display: flex;
+gap: 40px;
+}
+
 .page-adress {
     font-style: normal;
-  }
+    margin-left: auto;
+}
 
 .adress-link {
         font-size: 16px;
@@ -66,20 +129,43 @@ font-family: "Raleway", sans-serif;
 }
 
 /* ========= HERO STYLES ========= */
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .hero {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2e2f42;
 }
 
+.hero-container {
+    padding-top: 226px;
+    padding-bottom: 188px;
+    padding-left: 329px;
+    padding-right: 332px;
+    color: #ffffff;
+}
+
 .title-hero {
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #ffffff;
+    margin-bottom: 48px;
+    min-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+   
 }
  
 .button-hero {
+    margin-left: 158px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+        min-width: 169px;
+        height: 56px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -95,7 +181,16 @@ background-color: #404bbf;
 }
 
 /* ========= BENEFITS STYLES ========= */
- 
+
+.menu-benefits {
+    display: flex;
+    column-gap: 24px;
+}
+
+.item-benefits {
+    width: calc((100%-72px)/4);
+}
+
 .title-benefits {
         font-weight: 500;
         font-size: 20px;
@@ -111,21 +206,18 @@ background-color: #404bbf;
 }
 
 /* ========= TEAM STYLES ========= */
+ .menu-team {
+    display: flex;
+    column-gap: 24px;
+ }
 
 .team {
     background: #f4f4fd;
 }
 
 .item-team {
+    width: calc((100%-72px)/4);
     background: #ffffff;
-}
-.title-team {
-        text-transform: capitalize;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
 }
 
 .name-team {
@@ -146,13 +238,15 @@ color: #2e2f42;
 
 /* ========= PORTFOLIO STYLES ========= */
 
-.title-portfolio {
-        text-transform: capitalize;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
+.menu-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.item-portfolio {
+    width: calc((100%-48px)/3);
 }
 
 .subtitle-portfolio {
@@ -172,6 +266,9 @@ color: #2e2f42;
 /* ========= FOOTER STYLES ========= */
 
 .footer {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2e2f42;
 }
 .link-footer {
